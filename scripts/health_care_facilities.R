@@ -1,4 +1,4 @@
-# Script to read in and plot street tree data from
+# Script to read in and plot health care facility data from
 # the city of San Francisco
 # Jacinda Chen
 # jrchen@dons.usfca.edu
