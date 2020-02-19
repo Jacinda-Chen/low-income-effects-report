@@ -26,5 +26,5 @@ health_care %>%
   theme(axis.text.x = element_text(angle=45, hjust=1)) +
   geom_bar() +
   ggtitle("Types of Services per Facility Type")
-  
+
  ggsave("output/Types_of_Services_per_Facility_Type.pdf")
