@@ -1,5 +1,5 @@
 ---
-title: "Final Report"
+title: "The Negative Effect of Air Quality on Birds"
 author: "Jacinda Chen"
 date: "March 1, 2020"
 bibliography: references.bib
@@ -18,7 +18,7 @@ Air is vital for the majority of living organisms on Earth. As such, the quality
 
 The decreased quality of air does not only affect humans, it can affect other organisms such as birds and plants. It has been found that the presence of highways had decreased the population size of birds for an entire area of study [@reijnen1994effects]. In addition to air pollution as a result of traffic, noise pollution is also a point of concern. It was found that if the environmental noise was louder at a certain location, free-ranging nightingales would sing louder compared to quieter environmental locations [@brumm2004impact]. This is significant because it is an example of a bird's change in behavior as a result of noise pollution. Their change in song might compromise mating interactions because of decreased quality of sound. Acoustic-dependent communication suffers greatly in environments with a lot of noise pollution. It was also found that different species of birds react differently to air pollution. While one species of birds reacted negatively to air pollution at the egg stage, another reacted very negatively at the nesting stage [@eeva1996direct]. In addition, these birds were also found to have a reduced number of breeding occurrences as a result of air pollution [@eeva1996direct]. 
 
-My question is what is the correlation between air quality (Air Quality Index) and bird biodiversity. My hypothesis is that there is a positive correlation between the number of species of birds and good air quality (according to the Air Quality Index). Bad air quality leads to lung and cardiovascular issues that would lower the number of species of birds per area. Another question I have is what the correlation between air quality (number of toxic volatile compounds) and bird biodiversity. I believe that there is a positive correlation between the number of species of birds and lesser amounts of toxic volatile compounds. More toxic volatile compounds lead to respiratory and heart issues that would lower the number of species of birds per area.
+My question was what is the correlation between air quality (Air Quality Index) and bird biodiversity. My hypothesis was that there is a positive correlation between the number of species of birds and good air quality (according to the Air Quality Index). Bad air quality leads to lung and cardiovascular issues that would lower the number of species of birds per area. Another question I had was what the correlation between air quality (number of toxic volatile compounds) and bird biodiversity. I believed that there was a positive correlation between the number of species of birds and lesser amounts of toxic volatile compounds. More toxic volatile compounds lead to respiratory and heart issues that would lower the number of species of birds per area.
 
 # Methods
 
