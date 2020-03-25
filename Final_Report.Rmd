@@ -170,23 +170,6 @@ resiliency_data %>%
 ```
 
 
-
-
-
-
-
-
-```{r neightborhood-high-pm-low-trees}
-# filter out the names of the neighborhoods with low trees and high
-# PM2.5 levels (as seen in Figure 1)
-resiliency_data %>%
-  filter(PM_Conc > 9) %>%
-  kable(digits = 2, col.names = c("Neighborhood",
-                                         "PM 2.5 Concentration",
-                                         "Percent Tree Cover"))
-```
-**Table 2:** Neighborhoods low tree cover and high PM2.5 levels in San Francisco. 
-
 ```{r neighborhood-low-pm-poverty-rate}
 resiliency_data %>%
   filter(PM_Conc > 9) %>%
