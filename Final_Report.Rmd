@@ -9,7 +9,10 @@ output: word_document
 
 ```{r setup, include=FALSE}
 # Set up
-knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(echo = FALSE,
+                      message = FALSE,
+                      error = FALSE,
+                      warning = FALSE)
 ```
 
 # Introduction
@@ -22,7 +25,7 @@ My question was what is the correlation between air quality (Air Quality Index) 
 
 # Methods
 
-Add text here.
+Add text here. If not using the data, we don't have to put the methods.
 
 ## Site Locations and Descriptions
 
@@ -42,6 +45,9 @@ Add text here.
 
 # Add a number of code chunks in the Results section. These should read in, subset and plot the data as needed (no need to save any figures to pdf, since they will be put into the rendered document when you click 'knit'), and, for any hypotheses that you want to test, an appropriate statistical test. 
 
+# Discussion
+
+# Figures and Tables
 ```{r load-packages}
 # Load libraries
 library("dplyr")
@@ -50,9 +56,159 @@ library("ggplot2")
 library("readr")
 library("rebird")
 library("citr")
+library("broom")
+library("knitr")
 ```
 
-# Discussion
+```{r read-in-data}
+# read in the neighborhood resilience dataset from a csv file
+# https://data.sfgov.org/Health-and-Social-Services/
+#     Community-Resiliency-Indicator-System/banc-xdvr
+resiliency_data <- read_csv(
+  "data/raw_data/Community_Resiliency_Indicator_System.csv")
+```
+
+```{r scatterplot-pm25-poverty-rate}
+# want to know the relationship between poverty rate and PM 2.5 levels
+# in different SF neighborhoods. These are both continuous variables
+# and numeric so the plan is to use a scatterplot and then test the
+# relationship using regression.
+ggplot(data = resiliency_data,
+       aes(x = Pov_Per,
+           y = PM_Conc)) +
+  geom_point(size = 3, color = "black") +
+  ggtitle("Relationship between the poverty rate and PM 2.5 levels",
+          "Across San Francisco Neighborhoods") +
+  labs(x = "Percent Poverty Rate in a Given Neighborhood",
+       y = "PM 2.5 Concentration from All Sources") +
+  geom_smooth(method = "lm", alpha = 0.3)
+```
+**Figure 1:** There is a negative linear relationship (p < 0.01) between the percent cover of trees in a given neighborhood in San Francisco and the PM2.5 particulates from all sources.
+
+
+```{r poverty-rate-and-PM25-regression}
+# it looks like there is a relationship between poverty rate
+# and PM 2.5 levels in SF neighborhoods! Now need to check that it is
+# a significant relationship. Will use a linear model to do this
+results_from_pm_tree_lm <- summary(lm(PM_Conc ~ Pov_Per,
+                                      data = resiliency_data))
+knitr::kable(broom::tidy(results_from_pm_tree_lm), digits = 4)
+```
+
+
+```{r scatterplot-pm25-tree-cover}
+# want to know the relationship between tree cover and PM 2.5 levels
+# in different SF neighborhoods. These are both continuous variables
+# and numeric so the plan is to use a scatterplot and then test the
+# relationship using regression
+ggplot(data = resiliency_data,
+       aes(x = Tree_Per,
+           y = PM_Conc)) +
+  geom_point(size = 3, color = "black") +
+  ggtitle("Relationship between the tree cover and PM 2.5 levels",
+          "Across San Francisco Neighborhoods") +
+  labs(x = "Percent Cover of Trees in a Given Neighborhood",
+       y = "PM 2.5 Concentration from All Sources") +
+  geom_smooth(method = "lm", alpha = 0.3)
+```
+**Figure 1:** There is a negative linear relationship (p < 0.01) between the percent cover of trees in a given neighborhood in San Francisco and the PM2.5 particulates from all sources.
+
+
+```{r tree-cover-and-PM25-regression}
+# it looks like there is a relationship between percent tree cover
+# and PM 2.5 levels in SF neighborhoods! Now need to check that it is
+# a significant relationship. Will use a linear model to do this
+results_from_pm_tree_lm <- summary(lm(PM_Conc ~ Tree_Per,
+                                      data = resiliency_data))
+knitr::kable(broom::tidy(results_from_pm_tree_lm), digits = 4)
+```
+**Table 1:** Statistical table showing results from the linear model depicted in Figure 1.
+
+
+```{r scatterplot-HSPer-PovPer}
+# want to know the relationship between poverty rate and high school degree
+# in different SF neighborhoods. These are both continuous variables
+# and numeric so the plan is to use a scatterplot and then test the
+# relationship using regression
+ggplot(data = resiliency_data,
+       aes(x = Pov_Per,
+           y = HS_Per)) +
+  geom_point(size = 3, color = "black") +
+  ggtitle("Relationship between the Poverty Rate and High School Degrees",
+          "Across San Francisco Neighborhoods") +
+  labs(x = "Percent Poverty Rate in a Given Neighborhood",
+       y = "Percent High School Degree Over Age 25") +
+  geom_smooth(method = "lm", alpha = 0.3)
+```
+**Figure 1:** There is a negative linear relationship (p < 0.01) between the percent cover of trees in a given neighborhood in San Francisco and the PM2.5 particulates from all sources.
+
+
+```{r poverty-rate-and-HS-diplomas}
+# it looks like there is a relationship between poverty rate
+# and graduating high school in SF neighborhoods! Now need to check that it is
+# a significant relationship. Will use a linear model to do this
+results_from_pm_tree_lm <- summary(lm(HS_Per ~ Pov_Per,
+                                      data = resiliency_data))
+knitr::kable(broom::tidy(results_from_pm_tree_lm), digits = 4)
+```
+
+
+
+```{r bar-graph-of-poverty-type}
+resiliency_data %>%
+  filter(Pov_Per > 0.42| Pov_Per < 0.165) %>%
+   mutate(Extremes = case_when(Pov_Per > 0.42 ~ "Top 5",
+                              Pov_Per < 0.165 ~ "Bottom 5")) %>%
+  select(Neighborhood, NonWhi_Per, Pov_Per, Extremes) %>%
+  ggplot(aes(x = Neighborhood,
+             y = NonWhi_Per)) +
+  facet_wrap(~Extremes, scales = "free") +
+  theme(axis.text.x = element_text(angle=45, hjust=1)) +
+  geom_bar(stat = "identity") +
+  ggtitle("Non-White Percentages in Extreme Poverty Rate Neighborhoods") +
+  ylab("Non-White Percentage")
+```
+
+
+
+
+
+
+
+
+```{r neightborhood-high-pm-low-trees}
+# filter out the names of the neighborhoods with low trees and high
+# PM2.5 levels (as seen in Figure 1)
+resiliency_data %>%
+  filter(PM_Conc > 9) %>%
+  kable(digits = 2, col.names = c("Neighborhood",
+                                         "PM 2.5 Concentration",
+                                         "Percent Tree Cover"))
+```
+**Table 2:** Neighborhoods low tree cover and high PM2.5 levels in San Francisco. 
+
+```{r neighborhood-low-pm-poverty-rate}
+resiliency_data %>%
+  filter(PM_Conc > 9) %>%
+  select(Neighborhood, PM_Conc, Pov_Per) %>%
+  kable(digits = 2, col.names = c("Neighborhood",
+                                         "PM 2.5 Concentration",
+                                         "Percent Poverty Rate"))
+```
+
+
+```{r neightborhood-low-pm-low-trees}
+# filter out the names of the neighborhoods with low trees and high
+# PM2.5 levels (as seen in Figure 1)
+resiliency_data %>%
+  filter(PM_Conc < 8.4 & Tree_Per < 0.075) %>%
+  select(Neighborhood, PM_Conc, Tree_Per) %>%
+  knitr::kable(digits = 2, col.names = c("Neighborhood",
+                                         "PM 2.5 Concentration",
+                                         "Percent Tree Cover"))
+```
+**Table 3:** Neighborhoods low tree cover and low PM2.5 levels in San Francisco. 
+
 
 # Sources Cited
 
