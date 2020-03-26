@@ -70,8 +70,11 @@ resiliency_data <- read_csv(
 # read in the people in poverty by select characteristics from csv file
 # https://www.census.gov/data/tables/2019/demo/income-poverty/p60-266.html
 characteristic_poverty <- read_csv(
-  "data/raw_data/People_In_Poverty_By_Select_Characteristics.csv"
-)
+  "data/raw_data/People_In_Poverty_By_Select_Characteristics.csv")
+
+#read in
+#https://www.census.gov/data/tables/time-series/demo/income-poverty/cps-hi/hi.html
+health_insurance_poverty <- read_csv(paste0("data/raw_data/Health_Insurance_Current_Coverage_Status_and_",                               "Type_of_Coverage_by_Selected_Characteristics_2019.csv"))
 ```
 
 ```{r scatterplot-pm25-poverty-rate}
@@ -161,7 +164,8 @@ knitr::kable(broom::tidy(results_from_pm_tree_lm), digits = 4)
 
 
 ```{r bar-graph-of-poverty-type}
-# Create a bar graph that compares the top and bottom 5 poverty rates in different SF neighborhoods
+# Create a bar graph that compares the top and bottom 5 poverty rates
+# in different SF neighborhoods
 resiliency_data %>%
   filter(Pov_Per > 0.42| Pov_Per < 0.165) %>%
    mutate(Extremes = case_when(Pov_Per > 0.42 ~ "Poorest 5",
@@ -177,8 +181,9 @@ resiliency_data %>%
 ```
 
 
-```{r educational-attainment-of-US}
-# show the educational attainment of everyone in the US compared to poverty 
+```{r table-educational-attainment-of-US}
+# show a table of the educational attainment of everyone in the US
+# compared to poverty 
 characteristic_poverty %>%
   filter(groups == "Educational Attainment") %>%
   select(characteristics, `2017_total`, `2017_number_below_poverty`,
@@ -190,6 +195,34 @@ characteristic_poverty %>%
                       "Total in 2018",
                       "Number Below Poverty in 2018",
                       "Percent Below Poverty in 2018"))
+```
+
+```{r bar-graph-household-income-versus-health=insurance-coverage}
+# comparing Household Income with Health Insurance Coverage
+health_insurance_poverty %>%
+  filter(group == "Household Income") %>%
+  select(characteristics, percent_not_currently_covered) %>%
+  ggplot(aes(x = reorder(characteristics, -percent_not_currently_covered),
+             y = percent_not_currently_covered)) +
+  theme(axis.text.x = element_text(angle=45, hjust=1)) +
+  geom_bar(stat = "identity") +
+  ggtitle("Household Income versus Health Insurance Coverage") +
+  xlab("Household Income") +
+  ylab("Percent not currently coveraged")
+```
+
+```{r bar-graph-income-to-poverty-ratio-versus-health=insurance-coverage}
+# comparing income to poverty ratio with Health Insurance Coverage
+health_insurance_poverty %>%
+  filter(group == "Income-to-Poverty Ratio") %>%
+  select(characteristics, percent_not_currently_covered) %>%
+  ggplot(aes(x = reorder(characteristics, -percent_not_currently_covered),
+             y = percent_not_currently_covered)) +
+  theme(axis.text.x = element_text(angle=45, hjust=1)) +
+  geom_bar(stat = "identity") +
+  ggtitle("Income-to-Poverty versus Health Insurance Coverage") +
+  xlab("Income-to-Poverty Ratio") +
+  ylab("Percent not currently coveraged")
 ```
 
 Below this idk what is.
