@@ -1,0 +1,31 @@
+groups,characteristics,2017_total,2017_number_below_poverty,2017_percent_below_poverty,2018_total,2018_number_below_poverty,2018_percent_below_poverty
+People,People,"322,548","39,564",12.3,"323,847","38,146",11.8
+Race and Hispanic Origin,White,"247,255","26,026",10.5,"247,634","24,945",10.1
+Race and Hispanic Origin,"White, not Hispanic","195,218","16,619",8.5,"194,815","15,725",8.1
+Race and Hispanic Origin,Black,"42,477","9,224",21.7,"42,773","8,884",20.8
+Race and Hispanic Origin,Asian,"19,526","1,891",9.7,"19,768","1,996",10.1
+Race and Hispanic Origin,Hispanic (any race),"59,051","10,816",18.3,"59,957","10,526",17.6
+Sex,Male,"158,111","17,272",10.9,"158,741","16,782",10.6
+Sex,Female,"164,436","22,292",13.6,"165,106","21,363",12.9
+Age,Under age 18,"73,470","12,759",17.4,"73,284","11,869",16.2
+Age,Aged 18 to 64,"198,012","21,913",11.1,"197,775","21,130",10.7
+Age,Aged 65 and older,"51,066","4,893",9.6,"52,778","5,146",9.7
+Nativity,Native-born,"277,131","33,143",12,"278,051","31,828",11.4
+Nativity,Foreign-born,"45,417","6,421",14.1,"45,796","6,317",13.8
+Region,Northeast,"55,962","6,347",11.3,"55,270","5,682",10.3
+Region,Midwest,"67,341","7,571",11.2,"67,539","7,005",10.4
+Region,South,"122,269","16,474",13.5,"123,462","16,757",13.6
+Region,West,"76,976","9,172",11.9,"77,576","8,701",11.2
+Residence,Inside metropolitan statistical areas,"279,549","33,094",11.8,"281,549","31,936",11.3
+Residence,Outside metropolitan statistical areas,"42,999","6,470",15,"42,298","6,210",14.7
+Work Experience,"Total, aged 18 to 64","198,012","21,913",11.1,"197,775","21,130",10.7
+Work Experience,All workers,"152,227","8,106",5.3,"152,835","7,781",5.1
+Work Experience,Did not work at least 1 week,"45,785","13,807",30.2,"44,940","13,349",29.7
+Disability Status,"Total, aged 18 to 64","198,012","21,913",11.1,"197,775","21,130",10.7
+Disability Status,With a disability,"15,087","3,791",25.1,"14,845","3,818",25.7
+Disability Status,With no disability,"181,974","18,088",9.9,"182,010","17,279",9.5
+Educational Attainment,"Total, aged 25 and older","219,821","22,007",10,"221,478","21,916",9.9
+Educational Attainment,No high school diploma,"22,404","5,488",24.5,"21,975","5,693",25.9
+Educational Attainment,"High school, no college","62,669","8,054",12.9,"62,259","7,925",12.7
+Educational Attainment,Some college,"57,828","5,178",9,"57,428","4,812",8.4
+Educational Attainment,Bachelor's degree or higher,"76,920","3,286",4.3,"79,816","3,486",4.4
