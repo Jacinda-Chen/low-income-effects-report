@@ -1,0 +1,38 @@
+group,characteristics,total,number_not_currently_covered,90_percent_CI_number_not_currently_covered,percent_not_currently_covered,90_percent_CI_percent_not_currently_covered,number_currently_covered,90_percent_CI_number_currently_covered,percent_currently_covered,90_percent_CI_percent_currently_covered
+Family Status,In families,"262,010","22,208",586,8.5,0.2,"239,803","1,029",92,0.2
+Family Status,Householder,"83,508","6,850",224,8.2,0.3,"76,658",481,91.8,0.3
+Family Status,In unrelated subfamilies,"1,069",143,39,13.4,3.3,926,112,86.6,3.3
+Family Status,In unrelated families,"61,276","7,235",269,11.8,0.4,"54,041",774,88.2,0.4
+Race and Hispanic Origin,White,"248,001","21,841",560,8.8,0.2,"226,160",537,91.2,0.2
+Race and Hispanic Origin,Black,"42,842","4,528",231,10.6,0.5,"38,313",234,89.4,0.5
+Race and Hispanic Origin,Asian,"19,790","1,445",137,7.3,0.7,"18,344",234,92.7,0.7
+Race and Hispanic Origin,Hispanic (any race),"60,095","11,259",356,18.7,0.6,"48,836",356,81.3,0.6
+Age,Under 3 years,"11,650",726,82,6.2,0.7,"10,924",103,93.8,0.7
+Age,3 to 5 years,"12,083",609,61,5,0.5,"11,474",135,95,0.5
+Age,6 to 11 years,"24,514","1,373",109,5.6,0.4,"23,141",135,94.4,0.4
+Age,12 to 18 years,"29,774","2,092",133,7,0.4,"27,682",194,93,0.4
+Age,Aged 19 to 64 years,"193,548","24,278",538,12.5,0.3,"169,270",596,87.5,0.3
+Age,Aged 19 to 255,"29,297","4,498",199,15.4,0.7,"24,799",255,84.6,0.7
+Age,Aged 26 to 34 years,"40,768","6,141",220,15.1,0.5,"34,627",277,84.9,0.5
+Age,Aged 35 to 44 years,"41,027","5,462",209,13.3,0.5,"35,566",210,86.7,0.5
+Age,Aged 45 to 64 years,"82,455","8,177",252,9.9,0.3,"74,278",339,90.1,0.3
+Age,Aged 65 and older,"52,788",508,70,1,0.1,"52,279",261,99,0.1
+Household Income,"Less than $25,000","43,400","6,161",278,14.2,0.6,"37,239",702,85.8,0.6
+Household Income,"$25,000 to less than $50,000","59,271","7,862",339,13.3,0.5,"51,409",961,86.7,0.5
+Household Income,"$50,000 to less than $75,000","55,409","6,382",320,11.5,0.5,"49,027",878,88.5,0.5
+Household Income,"$75,000 to less than $100,000","44,630","3,578",245,8,0.5,"41,052",842,92,0.5
+Household Income,"$100,000 to less than $125,000","34,208","2,148",191,6.3,0.5,"32,060",852,93.7,0.5
+Household Income,"$125,000 to less than $150,000","23,359","1,177",139,5,0.6,"22,182",647,95,0.6
+Household Income,"$150,000 or more","64,079","2,278",191,3.6,0.3,"61,801","1,157",96.4,0.3
+Education,No high school diploma,"15,197","4,570",228,30.1,1.2,"10,627",298,69.9,1.2
+Education,High school graduate (includes equivalency),"44,573","7,060",239,15.8,0.5,"37,513",617,84.2,0.5
+Education,"Some college, no degree","24,977","2,944",159,11.8,0.6,"22,033",430,88.2,0.6
+Education,Associate's degree,"17,735","1,768",121,10,0.7,"15,967",375,90,0.7
+Education,Bachelor's degree,"39,255","2,600",136,6.6,0.3,"36,655",559,93.4,0.3
+Education,Graduate degree or higher,"22,514",839,90,3.7,0.4,"21,675",423,96.3,0.4
+Income-to-Poverty Ratio,Below 100 percent of poverty,"38,146","6,429",297,16.9,0.7,"31,716",693,83.1,0.7
+Income-to-Poverty Ratio,Below 138 percent of poverty,"58,351","9,495",371,16.3,0.6,"48,856",800,83.7,0.6
+Income-to-Poverty Ratio,Between 100 and 200 percent of poverty,"55,449","7,986",366,14.4,0.6,"47,463",935,85.6,0.6
+Income-to-Poverty Ratio,Between 200 and 300 percent of poverty,"50,734","6,013",313,11.9,0.6,"44,721",772,88.1,0.6
+Income-to-Poverty Ratio,Between 300 and 400 percent of poverty,"43,704","3,937",221,9,0.5,"39,767",719,91,0.5
+Income-to-Poverty Ratio,At or above 400 percent of poverty,"135,815","5,175",258,3.8,0.2,"130,640","1,245",96.2,0.2
