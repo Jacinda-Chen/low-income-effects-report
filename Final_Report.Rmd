@@ -66,6 +66,12 @@ library("knitr")
 #     Community-Resiliency-Indicator-System/banc-xdvr
 resiliency_data <- read_csv(
   "data/raw_data/Community_Resiliency_Indicator_System.csv")
+
+# read in the people in poverty by select characteristics from csv file
+# https://www.census.gov/data/tables/2019/demo/income-poverty/p60-266.html
+characteristic_poverty <- read_csv(
+  "data/raw_data/People_In_Poverty_By_Select_Characteristics.csv"
+)
 ```
 
 ```{r scatterplot-pm25-poverty-rate}
@@ -155,10 +161,11 @@ knitr::kable(broom::tidy(results_from_pm_tree_lm), digits = 4)
 
 
 ```{r bar-graph-of-poverty-type}
+# Create a bar graph that compares the top and bottom 5 poverty rates in different SF neighborhoods
 resiliency_data %>%
   filter(Pov_Per > 0.42| Pov_Per < 0.165) %>%
-   mutate(Extremes = case_when(Pov_Per > 0.42 ~ "Top 5",
-                              Pov_Per < 0.165 ~ "Bottom 5")) %>%
+   mutate(Extremes = case_when(Pov_Per > 0.42 ~ "Poorest 5",
+                              Pov_Per < 0.165 ~ "Richest 5")) %>%
   select(Neighborhood, NonWhi_Per, Pov_Per, Extremes) %>%
   ggplot(aes(x = Neighborhood,
              y = NonWhi_Per)) +
@@ -170,12 +177,30 @@ resiliency_data %>%
 ```
 
 
+```{r educational-attainment-of-US}
+# show the educational attainment of everyone in the US compared to poverty 
+characteristic_poverty %>%
+  filter(groups == "Educational Attainment") %>%
+  select(characteristics, `2017_total`, `2017_number_below_poverty`,
+         `2017_percent_below_poverty`, `2018_total`,
+         `2018_number_below_poverty`, `2018_percent_below_poverty`) %>%
+  kable(col.names = c("Characteristics", "Total in 2017",
+                      "Number Below Poverty in 2017",
+                      "Percent Below Poverty in 2017",
+                      "Total in 2018",
+                      "Number Below Poverty in 2018",
+                      "Percent Below Poverty in 2018"))
+```
+
+Below this idk what is.
+
 ```{r neighborhood-low-pm-poverty-rate}
 resiliency_data %>%
-  filter(PM_Conc > 9) %>%
-  select(Neighborhood, PM_Conc, Pov_Per) %>%
+  filter(Pov_Per > 0.42| Pov_Per < 0.165) %>%
+  select(Neighborhood, Under5_Per, Under18_Per, Over65_Per, Over85_Per, Pov_Per)%>%
+  arrange(desc(Pov_Per)) %>%
   kable(digits = 2, col.names = c("Neighborhood",
-                                         "PM 2.5 Concentration",
+                                         "Percent Under 5", "Percent Under 18", "Percent Over 65", "Percent Over 85",
                                          "Percent Poverty Rate"))
 ```
 
