@@ -1,5 +1,5 @@
 ---
-title: "The Negative Relationship Between Air Quality and Birds"
+title: "The Unfortunate Circumstances of Poverty"
 author: "Jacinda Chen"
 date: "March 1, 2020"
 bibliography: references.bib
@@ -17,23 +17,22 @@ knitr::opts_chunk$set(echo = FALSE,
 
 # Introduction
 
-Air is vital for the majority of living organisms on Earth. As such, the quality of the air should be of paramount importance to us. However, past and current ignorance as well as Mother Nature has led to multiple occurrences that contributed to air pollution. Some of the anthropological events are the creation of many industries and human-built buildings such as health care buildings that contribute to air pollution. Some of the events that contribute to air pollution that are out of human control are excessive wildfires. According to Moore et al., "increases in physician visits for respiratory diseases of between 46 and 78% above 10-year mean rates were observed for three weeks during the forest fire period" [@moore2006population]. The only thing we can do is decrease air pollution output from humans. One way that we can do that is by using lower sulfur marine fuel oil on main engines on ships at sea as opposed to high-sulfur heavy fuel oil, which has been found to result in a large reduction in the fine particle concentration of markers for heavy fuel oil combustion [@tao2013effects]. These reductions in sulfate particulates can really help the environment, and many people do not know about small changes they can make to do that. Another human-caused event that contributes to air pollution is vehicle traffic. Especially in San Francisco, overcrowding and traffic is a big issue. As a result from this, most people in San Francisco lean towards using public transport such as BART or Muni, which is a good alternative to car emissions. A lot of people also tend to walk or bike more, which increases foot traffic leading to less vehicle pollution. This is only a problem when there is bad weather, leading to conditions where people can no longer walk. Bad weather can increase the number of cars used, which in turn, increases traffic and then pollution. Air pollution as a result of traffic has also been found to create respiratory issues in surrounding residents. In the San Francisco Bay Area, traffic pollution has caused respiratory problems including bronchitis symptoms and asthma in children [@kim2004traffic]. 
+Air is vital for the majority of living organisms on Earth. As such, the quality of the air should be of paramount importance to us. However, past and current ignorance has led to multiple occurrences that contributed to air pollution. Some of the anthropological events are the creation of many industries and human-built buildings such as health care buildings that contribute to air pollution. Some of the events that contribute to air pollution that are out of human control are excessive wildfires. According to Moore et al., "increases in physician visits for respiratory diseases of between 46 and 78% above 10-year mean rates were observed for three weeks during the forest fire period" [@moore2006population]. The only thing we can do is decrease air pollution output from humans. One way that we can do that is by using lower sulfur marine fuel oil on main engines on ships at sea as opposed to high-sulfur heavy fuel oil, which has been found to result in a large reduction in the fine particle concentration of markers for heavy fuel oil combustion [@tao2013effects]. These reductions in sulfate particulates can really help the environment, and many people do not know about small changes they can make to do that. Another human-caused event that contributes to air pollution is vehicle traffic. Especially in San Francisco, overcrowding and traffic is a big issue. As a result from this, most people in San Francisco lean towards using public transport such as BART or Muni, which is a good alternative to car emissions. A lot of people also tend to walk or bike more, which increases foot traffic leading to less vehicle pollution. This is only a problem when there is bad weather, leading to conditions where people can no longer walk. Bad weather can increase the number of cars used, which in turn, increases traffic and then pollution. Air pollution as a result of traffic has also been found to create respiratory issues in surrounding residents. In the San Francisco Bay Area, traffic pollution has caused respiratory problems including bronchitis symptoms and asthma in children [@kim2004traffic]. 
 
-The decreased quality of air does not only affect humans, it can affect other organisms such as birds and plants. Birds are also a good model to monitor as a measure of air pollutants compared to invertebrates as they are higher up in the food chain and more representative of human health threats [@furness1993can]. It has been found that the presence of highways had decreased the population size of birds for an entire area of study [@reijnen1994effects]. In addition to air pollution as a result of traffic, noise pollution is also a point of concern. It was found that if the environmental noise was louder at a certain location, free-ranging nightingales would sing louder compared to quieter environmental locations [@brumm2004impact]. This is significant because it is an example of a bird's change in behavior as a result of noise pollution. Their change in song might compromise mating interactions because of decreased quality of sound. Acoustic-dependent communication suffers greatly in environments with a lot of noise pollution. It was also found that different species of birds react differently to air pollution. While one species of birds reacted negatively to air pollution at the egg stage, another reacted very negatively at the nesting stage [@eeva1996direct]. In addition, these birds were also found to have a reduced number of breeding occurrences as a result of air pollution [@eeva1996direct]. Another way that humans have affected bird populations is through heavy metal air pollutants. In southwest Finland, there was a study that showed decreased density of bird species in polluted areas [@eeva2002population]. Ground feeders were affected by soil pollution and foliage gleaners were affected by the loss of food as a result of pollution that affected trees[@eeva2002population]. This is a problem everywhere as industrialization and urbanization continue to develop across vast acres of land. Urbanization, in itself, has been proven to be a huge issue for wildlife, affecting them directly and indirectly. One way that scientists measure the impact that environmental stressors such as air pollution has on health is through a  biomarker: oxidative stress physiology. A study done in southern Sweden concluded that a higher level of highly potent pro-oxidants led to an increased amount of protective antioxidants in four species of birds [@salmon2018oxidative]. In addition, mining and crushing stones are very common industrial practice in some places that produce a dust, adding to the air pollution. It added so much noise and air pollution in India that they found evidence of forest degradation and a lesser density of birds [@saha2011effect]. 
+The decreased quality of air does not only affect humans, it can affect other organisms such as birds and plants. Birds are also a good model to monitor as a measure of air pollutants compared to invertebrates as they are higher up in the food chain and more representative of human health threats [@furness1993can]. It has been found that the presence of highways had decreased the population size of birds for an entire area of study [@reijnen1994effects]. In addition to air pollution as a result of traffic, noise pollution is also a point of concern. It was found that if the environmental noise was louder at a certain location, free-ranging nightingales would sing louder compared to quieter environmental locations [@brumm2004impact]. This is significant because it is an example of a bird's change in behavior as a result of noise pollution. Their change in song might compromise mating interactions because of decreased quality of sound. Acoustic-dependent communication suffers greatly in environments with a lot of noise pollution. It was also found that different species of birds react differently to air pollution. While one species of birds reacted negatively to air pollution at the egg stage, another reacted very negatively at the nesting stage [@eeva1996direct]. In addition, these birds were also found to have a reduced number of breeding occurrences as a result of air pollution [@eeva1996direct]. In addition, mining and crushing stones are very common industrial practice in some places that produce a dust, adding to the air pollution. It added so much noise and air pollution in India that they found evidence of forest degradation and a lesser density of birds [@saha2011effect]. 
 
-My question was what is the correlation between air quality (Air Quality Index) and bird biodiversity. My hypothesis was that there is a positive correlation between the number of species of birds and good air quality (according to the Air Quality Index). Bad air quality leads to lung and cardiovascular issues that would lower the number of species of birds per area. Another question I had was what the correlation between air quality (number of toxic volatile compounds) and bird biodiversity. I believed that there was a positive correlation between the number of species of birds and lesser amounts of toxic volatile compounds. More toxic volatile compounds lead to respiratory and heart issues that would lower the number of species of birds per area.
+As a result of the large importance of good air quality, people in power have assigned themselves to areas with better air quality while they assign lower air quality areas to others. The poorer you are, the more susceptible you are to living in areas with more air pollution, however these areas are also more prone to increased pollution [@lipfert2004air]. It is a hard loop to get out of. There is a three-way relationship between socioeconomic status, air quality, and health. People with low socioeconomic statuses lead to residential areas with worse air quality, resulting in overall less health. Envirnomental justice issues have been raised continuously over the uneven distribution of environmental impacts inside a city that leads to further discrimmination. Although areas with worse air quality leads to more health issues, these people often have less accessibility financially to health care. These low socioeconomic neighborhoods have also been found to contain high traffic densities which contribute hazardous pollutants like diesel exhaust to respiratory illnesses and mortality rates. It has been found that children in California that come from low-income or minority families disproportionately live in over two times the level of high-traffic compared to the rest of Southern California [@houston2004structural]. In Canada, there has been a lack of research linking the environment to child poverty. With such little precedence on environmental justice in such a large country, it is no surprise when there seems to be a lack of environmental justice awareness in the world overall. Children with low socioeconomic status are more likely to live in unkept residencies where the buildings themselves contain high levels of toxic contaminants. In addition, they are more prone to risk factors such as cigarette smoke and little nutrition while growing up, which leads to additional health concerns as they get older [@chaudhuri1998child]. 
+
+With all of these health concerns, it begs the question of how they would receive treatment. Many children who come from low-income families cannot afford to have health insurance. DeNavas-Walt writes that an "estimated 21.9 percent of Hispanic children did not have any health insurance in 2005, compared with 7.2 percent for non-Hispanic White children, 12.5 percent for Black children, and 12.2 percent for Asian children" [@denavas2010income]. From that, it is apparent that a strikingly high amount of low-income families that cannot afford health insurance for their children come from non-White families. Since the likelihood of health insurance coverage increases with income, a large percentage of non-White families are low-income compared to non-Hispanic White children. These families are in no position to  be able to pay for out-of-pocket health visits. This means that if these families were able to afford health insurance, it would enhance their utilization of the health care system and protect low-income families [@asfaw2007role]. "Universal health coverage" is still a far-fetched dream for many countries, however studies show that this would help with poverty reduction [@asfaw2007role]. Low-income families have little to no access to life-saving drugs, surgeries, or interventions with drug and alcohol addiction. Studies in Ghana in 2004 with the implementation of the National Health Insurance Scheme proved that health insurance protected low-income families financially from catastrophic out-of-pocket expenditure and reduced poverty [@aryeetey2016can]. 
+
+But how did they become low-income families? Many low-income families do not have a choice between education and working in or just out of high school as their families cannot afford to keep them in school. Less education means they are not able to easily obtain the qualifications that many jobs with higher pay require. However, money is not the cure-all option. There are many other variables that go into being in poverty that may affect children in poverty regarding school, such as an unstable home condition. A study showed that far less low-income students graduated from free college than expected [@burney2008constraints]. This has no relationship to their view on higher education. Another interview of 76 students from a high-poverty area showed a cohesive positive view of higher education that leads to more opportunities, however attending college would involve multiple risks [@cilesiz2016high]. Many first-generation families carry the dreams of their ancestors on their shoulders along with their own dreams and aspirations. A majority of these involve getting a higher education since higher education is usually linked with more income and having a better life. Another study showed that socioeconomic status increased the probability of learning disabilities and the impact that learning disabilites has on high school completion. It found that efforts to help students face poverty and their learning disabilities was effective in keeping them in school [@ingrum2006high]. Other studies have found a link between establishing good reading skills by third grade and dropping out of high school. Students who do not reach that milestone usually struggle more in later grades and end up dropping out before high school graduation [@hernandez2011double]. Many of these low-income families, especially children, need a stable support system in order to help them get the resources they need for free. 
+
+My question was what is the correlation between air quality (PM 2.5 Concentration) and poverty. My hypothesis was that there is a correlation between increasing precentages of poverty and decreasing amount of resources (worse air quality, less health insurance coverage, little to no high school education) related to being non-white. Bad air quality leads to lung and cardiovascular issues that would lower the number of species of birds per area. Less health insurance means that most families cannot afford even going up for a checkup at a hospital, nevermind an actual injury or condition that requires a hospital bed or drugs for treatment. Only completing high school means that there is less opportunity for jobs of higher pay, which gives them less of an opportunity to afford better living arrangements and such. 
 
 # Methods
 
-Add text here. If not using the data, we don't have to put the methods.
-
-## Site Locations and Descriptions
-
-Add text here.
-
-## Field Sampling Design
-
-Add text here.
+## Data Download and Processing
+I downloaded a dataset from DataSF called Community Resiliency Indicator System [@datasf2015community]. Another dataset that I used was from the United States Census Bureau, from the "Income and Poverty in the United States: 2019" page, was "Table B-1. People in Poverty by Selected Characteristics: 2017 and 2018" 
 
 ## Data Analysis and Statistics
 
@@ -41,13 +40,18 @@ Add text here.
 
 # Results
 
-## Subsections are ok in the results section too
+## Relationship Between Air Quality and Poverty
+This explains 20 percent of the variation of relationship between x and y (rsquared).
 
-# Add a number of code chunks in the Results section. These should read in, subset and plot the data as needed (no need to save any figures to pdf, since they will be put into the rendered document when you click 'knit'), and, for any hypotheses that you want to test, an appropriate statistical test. 
+## Relationship Between High School Graduation and Poverty
+
+
+## Poverty Demographics
+
 
 # Discussion
 
-# Figures and Tables
+# Figures
 ```{r load-packages}
 # Load libraries
 library("dplyr")
@@ -61,18 +65,18 @@ library("knitr")
 ```
 
 ```{r read-in-data}
-# read in the neighborhood resilience dataset from a csv file
+# read in the neighborhood resilience dataset from a csv file [@datasf2015community]
 # https://data.sfgov.org/Health-and-Social-Services/
 #     Community-Resiliency-Indicator-System/banc-xdvr
 resiliency_data <- read_csv(
   "data/raw_data/Community_Resiliency_Indicator_System.csv")
 
-# read in the people in poverty by select characteristics from csv file
+# read in the people in poverty by select characteristics from csv file 
 # https://www.census.gov/data/tables/2019/demo/income-poverty/p60-266.html
 characteristic_poverty <- read_csv(
   "data/raw_data/People_In_Poverty_By_Select_Characteristics.csv")
 
-#read in
+#read in health insurance coverage by select characteristics from csv file [@censusbureau2018health]
 #https://www.census.gov/data/tables/time-series/demo/income-poverty/cps-hi/hi.html
 health_insurance_poverty <- read_csv(paste0("data/raw_data/Health_Insurance_Current_Coverage_Status_and_",                               "Type_of_Coverage_by_Selected_Characteristics_2019.csv"))
 ```
@@ -92,18 +96,8 @@ ggplot(data = resiliency_data,
        y = "PM 2.5 Concentration from All Sources") +
   geom_smooth(method = "lm", alpha = 0.3)
 ```
+
 **Figure 1:** There is a negative linear relationship (p < 0.01) between the percent cover of trees in a given neighborhood in San Francisco and the PM2.5 particulates from all sources.
-
-
-```{r poverty-rate-and-PM25-regression}
-# it looks like there is a relationship between poverty rate
-# and PM 2.5 levels in SF neighborhoods! Now need to check that it is
-# a significant relationship. Will use a linear model to do this
-results_from_pm_tree_lm <- summary(lm(PM_Conc ~ Pov_Per,
-                                      data = resiliency_data))
-knitr::kable(broom::tidy(results_from_pm_tree_lm), digits = 4)
-```
-
 
 ```{r scatterplot-pm25-tree-cover}
 # want to know the relationship between tree cover and PM 2.5 levels
@@ -120,19 +114,8 @@ ggplot(data = resiliency_data,
        y = "PM 2.5 Concentration from All Sources") +
   geom_smooth(method = "lm", alpha = 0.3)
 ```
-**Figure 1:** There is a negative linear relationship (p < 0.01) between the percent cover of trees in a given neighborhood in San Francisco and the PM2.5 particulates from all sources.
 
-
-```{r tree-cover-and-PM25-regression}
-# it looks like there is a relationship between percent tree cover
-# and PM 2.5 levels in SF neighborhoods! Now need to check that it is
-# a significant relationship. Will use a linear model to do this
-results_from_pm_tree_lm <- summary(lm(PM_Conc ~ Tree_Per,
-                                      data = resiliency_data))
-knitr::kable(broom::tidy(results_from_pm_tree_lm), digits = 4)
-```
-**Table 1:** Statistical table showing results from the linear model depicted in Figure 1.
-
+**Figure 2:** There is a negative linear relationship (p < 0.01) between the percent cover of trees in a given neighborhood in San Francisco and the PM2.5 particulates from all sources.
 
 ```{r scatterplot-HSPer-PovPer}
 # want to know the relationship between poverty rate and high school degree
@@ -149,19 +132,8 @@ ggplot(data = resiliency_data,
        y = "Percent High School Degree Over Age 25") +
   geom_smooth(method = "lm", alpha = 0.3)
 ```
-**Figure 1:** There is a negative linear relationship (p < 0.01) between the percent cover of trees in a given neighborhood in San Francisco and the PM2.5 particulates from all sources.
 
-
-```{r poverty-rate-and-HS-diplomas}
-# it looks like there is a relationship between poverty rate
-# and graduating high school in SF neighborhoods! Now need to check that it is
-# a significant relationship. Will use a linear model to do this
-results_from_pm_tree_lm <- summary(lm(HS_Per ~ Pov_Per,
-                                      data = resiliency_data))
-knitr::kable(broom::tidy(results_from_pm_tree_lm), digits = 4)
-```
-
-
+**Figure 3:** There is a negative linear relationship (p < 0.01) between the percent cover of trees in a given neighborhood in San Francisco and the PM2.5 particulates from all sources.
 
 ```{r bar-graph-of-poverty-type}
 # Create a bar graph that compares the top and bottom 5 poverty rates
@@ -180,6 +152,74 @@ resiliency_data %>%
   ylab("Non-White Percentage")
 ```
 
+**Figure 4:** There is a higher Non-White Percentage (50-above 75%) in the poorest 5 neighborhoods compared to the Non-White Percentage (10% with an outlier of slightly below 45%) in the richest 5 neighborhoods in San Francisco.
+
+
+```{r bar-graph-household-income-versus-health-insurance-coverage}
+# comparing Household Income with Health Insurance Coverage
+health_insurance_poverty %>%
+  filter(group == "Household Income") %>%
+  select(characteristics, percent_not_currently_covered) %>%
+  ggplot(aes(x = reorder(characteristics, -percent_not_currently_covered),
+             y = percent_not_currently_covered)) +
+  theme(axis.text.x = element_text(angle=45, hjust=1)) +
+  geom_bar(stat = "identity") +
+  ggtitle("Household Income versus Health Insurance Coverage") +
+  xlab("Household Income") +
+  ylab("Percent not currently coveraged")
+```
+
+**Figure 5:** There is a negative relationship between household income in the United States and the percentage of people not currently coveraged by health insurance.
+
+```{r bar-graph-income-to-poverty-ratio-versus-health-insurance-coverage}
+# comparing income to poverty ratio with Health Insurance Coverage
+health_insurance_poverty %>%
+  filter(group == "Income-to-Poverty Ratio") %>%
+  select(characteristics, percent_not_currently_covered) %>%
+  ggplot(aes(x = reorder(characteristics, -percent_not_currently_covered),
+             y = percent_not_currently_covered)) +
+  theme(axis.text.x = element_text(angle=45, hjust=1)) +
+  geom_bar(stat = "identity") +
+  ggtitle("Income-to-Poverty versus Health Insurance Coverage") +
+  xlab("Income-to-Poverty Ratio") +
+  ylab("Percent not currently coveraged")
+```
+
+**Figure 6:** There is a negative relationship between the income-to-poverty ratio in the United States and the percentage of people not currently coveraged by health insurance.
+
+# Tables
+```{r poverty-rate-and-PM25-regression}
+# it looks like there is a relationship between poverty rate
+# and PM 2.5 levels in SF neighborhoods! Now need to check that it is
+# a significant relationship. Will use a linear model to do this
+results_from_pm_tree_lm <- summary(lm(PM_Conc ~ Pov_Per,
+                                      data = resiliency_data))
+knitr::kable(broom::tidy(results_from_pm_tree_lm), digits = 4)
+```
+
+**Table 1:** Statistical table showing results from the linear model depicted in Figure 1(R^2 = 0.2396).
+
+```{r tree-cover-and-PM25-regression}
+# it looks like there is a relationship between percent tree cover
+# and PM 2.5 levels in SF neighborhoods! Now need to check that it is
+# a significant relationship. Will use a linear model to do this
+results_from_pm_tree_lm <- summary(lm(PM_Conc ~ Tree_Per,
+                                      data = resiliency_data))
+knitr::kable(broom::tidy(results_from_pm_tree_lm), digits = 4)
+```
+
+**Table 2:** Statistical table showing results from the linear model depicted in Figure 2 (R^2 = 0.1935).
+
+```{r poverty-rate-and-HS-diplomas-regression}
+# it looks like there is a relationship between poverty rate
+# and graduating high school in SF neighborhoods! Now need to check that it is
+# a significant relationship. Will use a linear model to do this
+results_from_pm_tree_lm <- summary(lm(HS_Per ~ Pov_Per,
+                                      data = resiliency_data))
+knitr::kable(broom::tidy(results_from_pm_tree_lm), digits = 4)
+```
+
+**Table 3:** Statistical table showing results from the linear model depicted in Figure 3 (R^2 = 0.4516).
 
 ```{r table-educational-attainment-of-US}
 # show a table of the educational attainment of everyone in the US
@@ -197,59 +237,7 @@ characteristic_poverty %>%
                       "Percent Below Poverty in 2018"))
 ```
 
-```{r bar-graph-household-income-versus-health=insurance-coverage}
-# comparing Household Income with Health Insurance Coverage
-health_insurance_poverty %>%
-  filter(group == "Household Income") %>%
-  select(characteristics, percent_not_currently_covered) %>%
-  ggplot(aes(x = reorder(characteristics, -percent_not_currently_covered),
-             y = percent_not_currently_covered)) +
-  theme(axis.text.x = element_text(angle=45, hjust=1)) +
-  geom_bar(stat = "identity") +
-  ggtitle("Household Income versus Health Insurance Coverage") +
-  xlab("Household Income") +
-  ylab("Percent not currently coveraged")
-```
-
-```{r bar-graph-income-to-poverty-ratio-versus-health=insurance-coverage}
-# comparing income to poverty ratio with Health Insurance Coverage
-health_insurance_poverty %>%
-  filter(group == "Income-to-Poverty Ratio") %>%
-  select(characteristics, percent_not_currently_covered) %>%
-  ggplot(aes(x = reorder(characteristics, -percent_not_currently_covered),
-             y = percent_not_currently_covered)) +
-  theme(axis.text.x = element_text(angle=45, hjust=1)) +
-  geom_bar(stat = "identity") +
-  ggtitle("Income-to-Poverty versus Health Insurance Coverage") +
-  xlab("Income-to-Poverty Ratio") +
-  ylab("Percent not currently coveraged")
-```
-
-Below this idk what is.
-
-```{r neighborhood-low-pm-poverty-rate}
-resiliency_data %>%
-  filter(Pov_Per > 0.42| Pov_Per < 0.165) %>%
-  select(Neighborhood, Under5_Per, Under18_Per, Over65_Per, Over85_Per, Pov_Per)%>%
-  arrange(desc(Pov_Per)) %>%
-  kable(digits = 2, col.names = c("Neighborhood",
-                                         "Percent Under 5", "Percent Under 18", "Percent Over 65", "Percent Over 85",
-                                         "Percent Poverty Rate"))
-```
-
-
-```{r neightborhood-low-pm-low-trees}
-# filter out the names of the neighborhoods with low trees and high
-# PM2.5 levels (as seen in Figure 1)
-resiliency_data %>%
-  filter(PM_Conc < 8.4 & Tree_Per < 0.075) %>%
-  select(Neighborhood, PM_Conc, Tree_Per) %>%
-  knitr::kable(digits = 2, col.names = c("Neighborhood",
-                                         "PM 2.5 Concentration",
-                                         "Percent Tree Cover"))
-```
-**Table 3:** Neighborhoods low tree cover and low PM2.5 levels in San Francisco. 
-
+**Table 4:** Table showing the educational attainment of everyone in the United States compared to poverty. 
 
 # Sources Cited
 
