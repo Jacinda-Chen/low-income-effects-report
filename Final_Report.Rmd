@@ -32,11 +32,14 @@ My question was what is the correlation between air quality (PM 2.5 Concentratio
 # Methods
 
 ## Data Download and Processing
-I downloaded a dataset from DataSF called Community Resiliency Indicator System [@datasf2015community]. Another dataset that I used was from the United States Census Bureau, from the "Income and Poverty in the United States: 2019" page, was "Table B-1. People in Poverty by Selected Characteristics: 2017 and 2018" 
+
+I downloaded a dataset from DataSF called Community Resiliency Indicator System [@datasf2015community]. Another dataset that I used was from the United States Census Bureau, from the "Income and Poverty in the United States: 2019" page, was "Table B-1. People in Poverty by Selected Characteristics: 2017 and 2018" [@censusbureau2018people]. As the dataset was not able to be directly used in RStudio, I had to un-merge cells from the original Excel file without the use of empty cells. The third dataset that I used was also from the United States Census Bureau, from the "Health Insurance: Tables 2018-forward" page, was "H-02. Health Insurance Coverage Status and Type of Coverage by Selected Characteristics: 2019" [@censusbureau2018health]. As the dataset was not able to be directly used in RStudio, I had to un-merge cells from the original Excel file without the use of empty cells.
 
 ## Data Analysis and Statistics
 
-Add text here.
+In order to analyze the data from the datasets, I used the libraries: dplyr, tidyr, ggplot2, readr, citr, broom, knitr. The package dplyr is used for data manipulation by rearranging existing variables, picking cases and variables based on their values and names, and summarizing values. Often used with dyplyr, tidyr is for "tidying" your data by organizing it in a way that is easy to use with other packages to visualize (ggplot2) and more. The package ggplot2 is able to create graphics based on the provided data. In order to read the datasets in csv format, the package readr is necessary. I cited my sources using the package citr. Broom organizes messy outputs into tidy data frames. In order to turn my report into a Word document, I use knitr for the report generation. 
+
+I found the p-value and the R^2 value using linear regression. Linear regression explores the relationship between a dependent variable and an independent variable using a linear approach. A p-value of less than 0.05 was statistically significant as there was less than a 5% chance that the relationship occured due to chance. R^2 determines the predictable proportion of variance of the dependent variable on the independent variable. A R^2 close to one means that the dependent variable is entirely predictable from solely the independent variable.
 
 # Results
 
@@ -58,7 +61,6 @@ library("dplyr")
 library("tidyr")
 library("ggplot2")
 library("readr")
-library("rebird")
 library("citr")
 library("broom")
 library("knitr")
@@ -71,7 +73,7 @@ library("knitr")
 resiliency_data <- read_csv(
   "data/raw_data/Community_Resiliency_Indicator_System.csv")
 
-# read in the people in poverty by select characteristics from csv file 
+# read in the people in poverty by select characteristics from csv file [@censusbureau2018people]
 # https://www.census.gov/data/tables/2019/demo/income-poverty/p60-266.html
 characteristic_poverty <- read_csv(
   "data/raw_data/People_In_Poverty_By_Select_Characteristics.csv")
