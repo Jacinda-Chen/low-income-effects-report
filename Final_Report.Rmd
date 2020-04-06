@@ -47,11 +47,11 @@ I found the p-value and the R^2 value using linear regression. Linear regression
 
 ## Air Quality (PM 2.5 levels) and Poverty
 
-In San Francisco, as the percent poverty rate increases, the harmful PM 2.5 levels also increases (Figure 1). This positive linear relationship (p < 0.01) explains 23.96% of the variation of relationship between PM 2.5 levels and poverty (Table 1). There is also a link between the percent cover of trees in a given neighborhood in San Francisco and the amount of PM 2.5 concentration from all sources. As the percent cover of trees increases, the PM 2.5 concentration decreases (Figure 2). This negative linear relationship (p <0.01) explains 19.35% of the variation of relationship between the percent cover of trees and PM 2.5 concentration (Table 2).
+In San Francisco, as the percent poverty rate increased, the harmful PM 2.5 levels also increased (Figure 1). This positive linear relationship (p < 0.01) explains 23.96% of the variation of relationship between PM 2.5 levels and poverty (Table 1). There is also a link between the percent cover of trees in a given neighborhood in San Francisco and the amount of PM 2.5 concentration from all sources. As the percent cover of trees increased, the PM 2.5 concentration decreased (Figure 2). This negative linear relationship (p <0.01) explains 19.35% of the variation of relationship between the percent cover of trees and PM 2.5 concentration (Table 2).
 
 ## High School Graduation and Poverty
 
-In San Francisco, as the percent poverty rate increases, the percent of people over 25 with a high school degree decreases (Figure 3). This negative linear relationship (p < 0.01) explains 45.16% of the variation of relationship between percent poverty rate and percent of high school degrees (Table 3). In the United States of America in 2017, 10% of the 219,821 people aged 25 and older were below poverty (Table 4). Out of that 10%, 24.5% did not have a high school diploma while only 4.3% had a bachelor's degree or higher (Table 4). In 2018, the percent below poverty went down by 0.1% (Table 4). However, out of the 9.9%, 25.9% did not have a high school diploma while 4.4% had a bachelor's degree or higher (Table 4). 
+In San Francisco, as the percent poverty rate increased, the percent of people over 25 with a high school degree decreased (Figure 3). This negative linear relationship (p < 0.01) explains 45.16% of the variation of relationship between percent poverty rate and percent of high school degrees (Table 3). In the United States of America in 2017, 10% of the 219,821 people aged 25 and older were below poverty (Table 4). Out of that 10%, 24.5% did not have a high school diploma while only 4.3% had a bachelor's degree or higher (Table 4). In 2018, the percent below poverty went down by 0.1% (Table 4). However, out of the 9.9%, 25.9% did not have a high school diploma while 4.4% had a bachelor's degree or higher (Table 4). 
 
 ## Poverty Demographics
 
@@ -71,9 +71,9 @@ PM 2.5 levels elevated as poverty rate increased and tree coverage increased as 
 
 ## High School Graduation and Poverty
 
-In San Francisco, as the percent poverty rate increases, the percent of people over 25 with a high school degree decreases (Figure 3). This negative linear relationship (p < 0.01) explains 45.16% of the variation of relationship between percent poverty rate and percent of high school degrees (Table 3). In the United States of America in 2017, 10% of the 219,821 people aged 25 and older were below poverty (Table 4). Out of that 10%, 24.5% did not have a high school diploma while only 4.3% had a bachelor's degree or higher (Table 4). In 2018, the percent below poverty went down by 0.1% (Table 4). However, out of the 9.9%, 25.9% did not have a high school diploma while 4.4% had a bachelor's degree or higher (Table 4). 
+In San Francisco, as the percent poverty rate increased, the percent of people over 25 with a high school degree decreased (Figure 3). This negative linear relationship (p < 0.01) explains 45.16% of the variation of relationship between percent poverty rate and percent of high school degrees (Table 3). In the United States of America in 2017, 10% of the 219,821 people aged 25 and older were below poverty (Table 4). Out of that 10%, 24.5% did not have a high school diploma while only 4.3% had a bachelor's degree or higher (Table 4). In 2018, the percent below poverty went down by 0.1% (Table 4). However, out of the 9.9%, 25.9% did not have a high school diploma while 4.4% had a bachelor's degree or higher (Table 4). 
 
-In San Francisco
+In San Francisco, the percent of people over 25 with a high school degree decreased as the percent poverty rate increased (Figure 3). In the United States in 2018, 25.9% out of 9.9% people over 25 did not have a high school diploma (Table 4). 
 
 # Figures
 ```{r load-packages}
