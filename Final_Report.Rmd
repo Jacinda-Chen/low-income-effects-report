@@ -23,6 +23,8 @@ The decreased quality of air does not only affect humans, it can affect other or
 
 As a result of the large importance of good air quality, people in power have assigned themselves to areas with better air quality while they assign lower air quality areas to others. The poorer you are, the more susceptible you are to living in areas with more air pollution, however these areas are also more prone to increased pollution [@lipfert2004air]. It is a hard loop to get out of. There is a three-way relationship between socioeconomic status, air quality, and health. People with low socioeconomic statuses lead to residential areas with worse air quality, resulting in overall less health. Envirnomental justice issues have been raised continuously over the uneven distribution of environmental impacts inside a city that leads to further discrimmination. Although areas with worse air quality leads to more health issues, these people often have less accessibility financially to health care. These low socioeconomic neighborhoods have also been found to contain high traffic densities which contribute hazardous pollutants like diesel exhaust to respiratory illnesses and mortality rates. It has been found that children in California that come from low-income or minority families disproportionately live in over two times the level of high-traffic compared to the rest of Southern California [@houston2004structural]. In Canada, there has been a lack of research linking the environment to child poverty. With such little precedence on environmental justice in such a large country, it is no surprise when there seems to be a lack of environmental justice awareness in the world overall. Children with low socioeconomic status are more likely to live in unkept residencies where the buildings themselves contain high levels of toxic contaminants. In addition, they are more prone to risk factors such as cigarette smoke and little nutrition while growing up, which leads to additional health concerns as they get older [@chaudhuri1998child]. 
 
+One way to track air pollution is by measuring their PM 2.5 concentration levels. Particulate Matter 2.5 (PM 2.5) are fine particles in the air that can affect the respiratory and cardiovascular systems depending on the amount of time and exposure an individual has to PM 2.5 [@departmentofhealthfine]. Elevated amounts of PM 2.5 in the air will lead to hazy appearances that limit visibility as well as an increase in illness, especially to those with previous repiratory concerns (such as asthma). The factors that contribute to PM 2.5 are from vehicles, grass or forest fires, power plants, heating coal, cooking, smoking, and more. PM 2.5 are also able to travel across large distances from their source by wind. 
+
 With all of these health concerns, it begs the question of how they would receive treatment. Many children who come from low-income families cannot afford to have health insurance. DeNavas-Walt writes that an "estimated 21.9 percent of Hispanic children did not have any health insurance in 2005, compared with 7.2 percent for non-Hispanic White children, 12.5 percent for Black children, and 12.2 percent for Asian children" [@denavas2010income]. From that, it is apparent that a strikingly high amount of low-income families that cannot afford health insurance for their children come from non-White families. Since the likelihood of health insurance coverage increases with income, a large percentage of non-White families are low-income compared to non-Hispanic White children. These families are in no position to  be able to pay for out-of-pocket health visits. This means that if these families were able to afford health insurance, it would enhance their utilization of the health care system and protect low-income families [@asfaw2007role]. "Universal health coverage" is still a far-fetched dream for many countries, however studies show that this would help with poverty reduction [@asfaw2007role]. Low-income families have little to no access to life-saving drugs, surgeries, or interventions with drug and alcohol addiction. Studies in Ghana in 2004 with the implementation of the National Health Insurance Scheme proved that health insurance protected low-income families financially from catastrophic out-of-pocket expenditure and reduced poverty [@aryeetey2016can]. 
 
 But how did they become low-income families? Many low-income families do not have a choice between education and working in or just out of high school as their families cannot afford to keep them in school. Less education means they are not able to easily obtain the qualifications that many jobs with higher pay require. However, money is not the cure-all option. There are many other variables that go into being in poverty that may affect children in poverty regarding school, such as an unstable home condition. A study showed that far less low-income students graduated from free college than expected [@burney2008constraints]. This has no relationship to their view on higher education. Another interview of 76 students from a high-poverty area showed a cohesive positive view of higher education that leads to more opportunities, however attending college would involve multiple risks [@cilesiz2016high]. Many first-generation families carry the dreams of their ancestors on their shoulders along with their own dreams and aspirations. A majority of these involve getting a higher education since higher education is usually linked with more income and having a better life. Another study showed that socioeconomic status increased the probability of learning disabilities and the impact that learning disabilites has on high school completion. It found that efforts to help students face poverty and their learning disabilities was effective in keeping them in school [@ingrum2006high]. Other studies have found a link between establishing good reading skills by third grade and dropping out of high school. Students who do not reach that milestone usually struggle more in later grades and end up dropping out before high school graduation [@hernandez2011double]. Many of these low-income families, especially children, need a stable support system in order to help them get the resources they need for free. 
@@ -43,16 +45,25 @@ I found the p-value and the R^2 value using linear regression. Linear regression
 
 # Results
 
-## Relationship Between Air Quality and Poverty
-This explains 20 percent of the variation of relationship between x and y (rsquared).
+## Relationship Between Air Quality (PM 2.5 levels) and Poverty
+
+In San Francisco, as the percent poverty rate increases, the harmful PM 2.5 levels also increases (Figure 1). This positive linear relationship (p < 0.01) explains 23.96% of the variation of relationship between PM 2.5 levels and poverty (Table 1). There is also a link between the percent cover of trees in a given neighborhood in San Francisco and the amount of PM 2.5 concentration from all sources. As the percent cover of trees increases, the PM 2.5 concentration decreases (Figure 2). This negative linear relationship (p <0.01) explains 19.35% of the variation of relationship between the percent cover of trees and PM 2.5 concentration (Table 2).
 
 ## Relationship Between High School Graduation and Poverty
 
+In San Francisco, as the percent poverty rate increases, the percent of people over 25 with a high school degree decreases (Figure 3). This negative linear relationship (p < 0.01) explains 45.16% of the variation of relationship between percent poverty rate and percent of high school degrees (Table 3). In the United States of America in 2017, 10% of the 219,821 people aged 25 and older were below poverty (Table 4). Out of that 10%, 24.5% did not have a high school diploma while only 4.3% had a bachelor's degree or higher (Table 4). In 2018, the percent below poverty went down by 0.1% (Table 4). However, out of the 9.9%, 25.9% did not have a high school diploma while 4.4% had a bachelor's degree or higher (Table 4). 
 
 ## Poverty Demographics
 
+Looking at the non-white percentages in five neighborhoods with the highest poverty rates and five neighborhoods with the lowest poverty rates in San Francisco in 2019, it becomes apparent that the richest five neighborhoods have lower non-white percentages (Figure 4). The lowest non-white percentage in the richest five neighborhoods was below 20% while the highest lowest non-white percentage in the poorest five neighborhoods was around 50% (Figure 4). 
+
+## Relationship Between Household Income and Health Insurance Coverage
+
+As the household income in the United States increased in 2019, the percent of people not currently coveraged with health insurance decreased (Figure 5). Households that received an income of less than \$25,000 had almost 15% not currently coveraged with health insurance while households with an income of \$150,000 or more had less than 5% without health insurance (Figure 5). The more financially secure the household, the more they sought health coverage. Zooming into particularly the people in poverty, a similar relationship was discovered. As the income-to-poverty ratio of percentages below poverty increased, the percent not currently coveraged with health insurance decreased (Figure 6). The people below 100 percent of poverty had over 15% without health insurance while less than 5% of people at or above 400 percent of poverty did not have health insurance (Figure 6). As people in the United States earned more income, the more health coverage they had. 
 
 # Discussion
+
+
 
 # Figures
 ```{r load-packages}
@@ -99,7 +110,7 @@ ggplot(data = resiliency_data,
   geom_smooth(method = "lm", alpha = 0.3)
 ```
 
-**Figure 1:** There is a negative linear relationship (p < 0.01) between the percent cover of trees in a given neighborhood in San Francisco and the PM2.5 particulates from all sources.
+**Figure 1:** There is a positive linear relationship (p < 0.01) between the percent cover of trees in a given neighborhood in San Francisco in 2019 and the PM 2.5 particulates from all sources.
 
 ```{r scatterplot-pm25-tree-cover}
 # want to know the relationship between tree cover and PM 2.5 levels
@@ -117,7 +128,7 @@ ggplot(data = resiliency_data,
   geom_smooth(method = "lm", alpha = 0.3)
 ```
 
-**Figure 2:** There is a negative linear relationship (p < 0.01) between the percent cover of trees in a given neighborhood in San Francisco and the PM2.5 particulates from all sources.
+**Figure 2:** There is a negative linear relationship (p < 0.01) between the percent cover of trees in a given neighborhood in San Francisco in 2019 and the PM 2.5 particulates from all sources.
 
 ```{r scatterplot-HSPer-PovPer}
 # want to know the relationship between poverty rate and high school degree
@@ -135,7 +146,7 @@ ggplot(data = resiliency_data,
   geom_smooth(method = "lm", alpha = 0.3)
 ```
 
-**Figure 3:** There is a negative linear relationship (p < 0.01) between the percent cover of trees in a given neighborhood in San Francisco and the PM2.5 particulates from all sources.
+**Figure 3:** There is a negative linear relationship (p < 0.01) between the percent cover of trees in a given neighborhood in San Francisco in 2019 and the PM 2.5 particulates from all sources.
 
 ```{r bar-graph-of-poverty-type}
 # Create a bar graph that compares the top and bottom 5 poverty rates
@@ -154,11 +165,11 @@ resiliency_data %>%
   ylab("Non-White Percentage")
 ```
 
-**Figure 4:** There is a higher Non-White Percentage (50-above 75%) in the poorest 5 neighborhoods compared to the Non-White Percentage (10% with an outlier of slightly below 45%) in the richest 5 neighborhoods in San Francisco.
+**Figure 4:** There is a higher Non-White Percentage (50-above 75%) in the poorest 5 neighborhoods compared to the Non-White Percentage (10% with an outlier of slightly below 45%) in the richest 5 neighborhoods in San Francisco in 2019.
 
 
 ```{r bar-graph-household-income-versus-health-insurance-coverage}
-# comparing Household Income with Health Insurance Coverage
+# comparing Household Income with Health Insurance Coverage in 2019
 health_insurance_poverty %>%
   filter(group == "Household Income") %>%
   select(characteristics, percent_not_currently_covered) %>%
@@ -171,7 +182,7 @@ health_insurance_poverty %>%
   ylab("Percent not currently coveraged")
 ```
 
-**Figure 5:** There is a negative relationship between household income in the United States and the percentage of people not currently coveraged by health insurance.
+**Figure 5:** There is a negative relationship between household income in the United States in 2019 and the percentage of people not currently coveraged by health insurance.
 
 ```{r bar-graph-income-to-poverty-ratio-versus-health-insurance-coverage}
 # comparing income to poverty ratio with Health Insurance Coverage
@@ -187,7 +198,7 @@ health_insurance_poverty %>%
   ylab("Percent not currently coveraged")
 ```
 
-**Figure 6:** There is a negative relationship between the income-to-poverty ratio in the United States and the percentage of people not currently coveraged by health insurance.
+**Figure 6:** There is a negative relationship between the income-to-poverty ratio in the United States in 2019 and the percentage of people not currently coveraged by health insurance.
 
 # Tables
 ```{r poverty-rate-and-PM25-regression}
@@ -199,7 +210,7 @@ results_from_pm_tree_lm <- summary(lm(PM_Conc ~ Pov_Per,
 knitr::kable(broom::tidy(results_from_pm_tree_lm), digits = 4)
 ```
 
-**Table 1:** Statistical table showing results from the linear model depicted in Figure 1(R^2 = 0.2396).
+**Table 1:** Statistical table showing results from the linear model depicted in Figure 1 (R^2 = 0.2396).
 
 ```{r tree-cover-and-PM25-regression}
 # it looks like there is a relationship between percent tree cover
@@ -239,7 +250,7 @@ characteristic_poverty %>%
                       "Percent Below Poverty in 2018"))
 ```
 
-**Table 4:** Table showing the educational attainment of everyone in the United States compared to poverty. 
+**Table 4:** Table showing the educational attainment of everyone in the United States in 2017-2018 compared to poverty. 
 
 # Sources Cited
 
