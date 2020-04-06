@@ -29,7 +29,7 @@ With all of these health concerns, it begs the question of how they would receiv
 
 But how did they become low-income families? Many low-income families do not have a choice between education and working in or just out of high school as their families cannot afford to keep them in school. Less education means they are not able to easily obtain the qualifications that many jobs with higher pay require. However, money is not the cure-all option. There are many other variables that go into being in poverty that may affect children in poverty regarding school, such as an unstable home condition. A study showed that far less low-income students graduated from free college than expected [@burney2008constraints]. This has no relationship to their view on higher education. Another interview of 76 students from a high-poverty area showed a cohesive positive view of higher education that leads to more opportunities, however attending college would involve multiple risks [@cilesiz2016high]. Many first-generation families carry the dreams of their ancestors on their shoulders along with their own dreams and aspirations. A majority of these involve getting a higher education since higher education is usually linked with more income and having a better life. Another study showed that socioeconomic status increased the probability of learning disabilities and the impact that learning disabilites has on high school completion. It found that efforts to help students face poverty and their learning disabilities was effective in keeping them in school [@ingrum2006high]. Other studies have found a link between establishing good reading skills by third grade and dropping out of high school. Students who do not reach that milestone usually struggle more in later grades and end up dropping out before high school graduation [@hernandez2011double]. Many of these low-income families, especially children, need a stable support system in order to help them get the resources they need for free. 
 
-My question was what is the correlation between air quality (PM 2.5 Concentration) and poverty. My hypothesis was that there is a correlation between increasing precentages of poverty and decreasing amount of resources (worse air quality, less health insurance coverage, little to no high school education) related to being non-white. Bad air quality leads to lung and cardiovascular issues that would lower the number of species of birds per area. Less health insurance means that most families cannot afford even going up for a checkup at a hospital, nevermind an actual injury or condition that requires a hospital bed or drugs for treatment. Only completing high school means that there is less opportunity for jobs of higher pay, which gives them less of an opportunity to afford better living arrangements and such. 
+My primary question was what is the correlation between poverty and detrimental environmental factors or available resources. My hypothesis was that there is a correlation between increasing precentages of poverty and decreasing amount of resources (worse air quality, less health insurance coverage, little to no high school education) related to being non-white. Bad air quality leads to lung and cardiovascular issues that would lower the number of species of birds per area. Less health insurance means that most families cannot afford even going up for a checkup at a hospital, nevermind an actual injury or condition that requires a hospital bed or drugs for treatment. Only completing high school means that there is less opportunity for jobs of higher pay, which gives them less of an opportunity to afford better living arrangements and such. 
 
 # Methods
 
@@ -45,11 +45,11 @@ I found the p-value and the R^2 value using linear regression. Linear regression
 
 # Results
 
-## Relationship Between Air Quality (PM 2.5 levels) and Poverty
+## Air Quality (PM 2.5 levels) and Poverty
 
 In San Francisco, as the percent poverty rate increases, the harmful PM 2.5 levels also increases (Figure 1). This positive linear relationship (p < 0.01) explains 23.96% of the variation of relationship between PM 2.5 levels and poverty (Table 1). There is also a link between the percent cover of trees in a given neighborhood in San Francisco and the amount of PM 2.5 concentration from all sources. As the percent cover of trees increases, the PM 2.5 concentration decreases (Figure 2). This negative linear relationship (p <0.01) explains 19.35% of the variation of relationship between the percent cover of trees and PM 2.5 concentration (Table 2).
 
-## Relationship Between High School Graduation and Poverty
+## High School Graduation and Poverty
 
 In San Francisco, as the percent poverty rate increases, the percent of people over 25 with a high school degree decreases (Figure 3). This negative linear relationship (p < 0.01) explains 45.16% of the variation of relationship between percent poverty rate and percent of high school degrees (Table 3). In the United States of America in 2017, 10% of the 219,821 people aged 25 and older were below poverty (Table 4). Out of that 10%, 24.5% did not have a high school diploma while only 4.3% had a bachelor's degree or higher (Table 4). In 2018, the percent below poverty went down by 0.1% (Table 4). However, out of the 9.9%, 25.9% did not have a high school diploma while 4.4% had a bachelor's degree or higher (Table 4). 
 
@@ -57,13 +57,17 @@ In San Francisco, as the percent poverty rate increases, the percent of people o
 
 Looking at the non-white percentages in five neighborhoods with the highest poverty rates and five neighborhoods with the lowest poverty rates in San Francisco in 2019, it becomes apparent that the richest five neighborhoods have lower non-white percentages (Figure 4). The lowest non-white percentage in the richest five neighborhoods was below 20% while the highest lowest non-white percentage in the poorest five neighborhoods was around 50% (Figure 4). 
 
-## Relationship Between Household Income and Health Insurance Coverage
+## Household Income and Health Insurance Coverage
 
 As the household income in the United States increased in 2019, the percent of people not currently coveraged with health insurance decreased (Figure 5). Households that received an income of less than \$25,000 had almost 15% not currently coveraged with health insurance while households with an income of \$150,000 or more had less than 5% without health insurance (Figure 5). The more financially secure the household, the more they sought health coverage. Zooming into particularly the people in poverty, a similar relationship was discovered. As the income-to-poverty ratio of percentages below poverty increased, the percent not currently coveraged with health insurance decreased (Figure 6). The people below 100 percent of poverty had over 15% without health insurance while less than 5% of people at or above 400 percent of poverty did not have health insurance (Figure 6). As people in the United States earned more income, the more health coverage they had. 
 
 # Discussion
 
+My primary question was what is the correlation between poverty and detrimental environmental factors or available resources. My hypothesis was that there is a correlation between increasing precentages of poverty and decreasing amount of resources (worse air quality, less health insurance coverage, little to no high school education) related to being non-white. My primary findings were that there was a significant positive linear relationship between increased poverty rate and increased PM 2.5 concentration. There were also significant negative linear relationships between increased percent tree coverage and decreased PM 2.5 concentration as well as increased percent poverty rate and decreased percent high school degree. Richer neighborhoods in San Francisco were also found to have smaller non-white percentages compared to poorer neighborhoods. In addition, households with larger incomes showed a greater percentage of health coverage in San Francisco. 
 
+## Air Quality (PM 2.5 levels) and Poverty
+
+PM 2.5 levels elevated as poverty rate increased and tree coverage increased as PM 2.5 levels decreased (Figure 1; Figure 2). It may be probable, then, that neighborhoods with high poverty rates will show less tree coverage compared with richer neighborhoods. If this is true, then there could be projects implemented in neighborhood with high poverty rates to plant more trees to manage the PM 2.5 levels. This is necessary as other places with high PM 2.5 levels found related health concerns. For example, air samples collected in 2011-2012 in Zhengzhou, China showed five times the standard PM 2.5 levels [@wang2014pahs]. These areas were found to have an increased carcinogenic risk associated with increased PM 2.5 levels [@wang2014pahs]. Another example in Targoviste City, Romania, showed that an increased Decreasing PM 2.5 levels will lower
 
 # Figures
 ```{r load-packages}
@@ -78,20 +82,25 @@ library("knitr")
 ```
 
 ```{r read-in-data}
-# read in the neighborhood resilience dataset from a csv file [@datasf2015community]
-# https://data.sfgov.org/Health-and-Social-Services/
-#     Community-Resiliency-Indicator-System/banc-xdvr
+# read in the neighborhood resilience dataset from a csv file
+# [@datasf2015community]
+# resiliency data ~~ https://data.sfgov.org/Health-and-Social-Services/
+# data continued~~ Community-Resiliency-Indicator-System/banc-xdvr
 resiliency_data <- read_csv(
   "data/raw_data/Community_Resiliency_Indicator_System.csv")
-
-# read in the people in poverty by select characteristics from csv file [@censusbureau2018people]
-# https://www.census.gov/data/tables/2019/demo/income-poverty/p60-266.html
+# read in the people in poverty by select characteristics from csv file
+# [@censusbureau2018people]
+# characteristics of poverty ~~ https://www.census.gov/data/tables/2019/demo/
+# income-poverty/p60-266.html
 characteristic_poverty <- read_csv(
   "data/raw_data/People_In_Poverty_By_Select_Characteristics.csv")
-
-#read in health insurance coverage by select characteristics from csv file [@censusbureau2018health]
-#https://www.census.gov/data/tables/time-series/demo/income-poverty/cps-hi/hi.html
-health_insurance_poverty <- read_csv(paste0("data/raw_data/Health_Insurance_Current_Coverage_Status_and_",                               "Type_of_Coverage_by_Selected_Characteristics_2019.csv"))
+# read in health insurance coverage by select characteristics from csv file
+# [@censusbureau2018health]
+# health insurance ~~ https://www.census.gov/data/tables/time-series/demo/
+# insurance continued ~~ income-poverty/cps-hi/hi.html
+health_insurance_poverty <- read_csv(paste0("data/raw_data/Health_Insurance_",
+      "Current_Coverage_Status_and_Type_of_Coverage_by_Selected_",
+      "Characteristics_2019.csv"))
 ```
 
 ```{r scatterplot-pm25-poverty-rate}
