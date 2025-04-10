@@ -49,14 +49,6 @@ This hypothesis was **supported** by the data, showing a clear intersection betw
 
 ---
 
-## Tools & Libraries
-
-- Python (Pandas, Matplotlib, Seaborn, SciPy)
-- Jupyter Notebook
-- Git & GitHub
-
----
-
 ## Acknowledgments
 
 This project was inspired by ongoing efforts in environmental justice and educational equity. Special thanks to public data providers and researchers advocating for systemic change.
